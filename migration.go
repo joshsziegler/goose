@@ -69,7 +69,7 @@ func (m *Migration) run(db *sql.DB, direction bool) error {
 		}
 
 		if len(statements) > 0 {
-			log.Println("OK   ", filepath.Base(m.Source))
+			// log.Println("OK   ", filepath.Base(m.Source))
 		} else {
 			log.Println("EMPTY", filepath.Base(m.Source))
 		}
@@ -113,7 +113,7 @@ func (m *Migration) run(db *sql.DB, direction bool) error {
 		}
 
 		if fn != nil {
-			log.Println("OK   ", filepath.Base(m.Source))
+			// log.Println("OK   ", filepath.Base(m.Source))
 		} else {
 			log.Println("EMPTY", filepath.Base(m.Source))
 		}
